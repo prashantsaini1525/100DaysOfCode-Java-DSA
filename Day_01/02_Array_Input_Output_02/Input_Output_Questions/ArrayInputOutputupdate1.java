@@ -1,3 +1,4 @@
+package Input_Output_Questions;
 import java.util.*;
 
 public class ArrayInputOutputupdate1 {
@@ -7,7 +8,7 @@ public class ArrayInputOutputupdate1 {
         
         Scanner sc = new Scanner(System.in);
         //int phy
-        // phy = sc.nextInt();
+        //phy = sc.nextInt();
         //int chem = sc.nextInt();
         //int math = sc.nextInt();
 

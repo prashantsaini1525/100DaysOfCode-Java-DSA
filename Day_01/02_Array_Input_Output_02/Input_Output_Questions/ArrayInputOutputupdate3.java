@@ -1,6 +1,7 @@
+package Input_Output_Questions;
 import java.util.Scanner;
 
-public class Ques {
+public class ArrayInputOutputupdate3 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
