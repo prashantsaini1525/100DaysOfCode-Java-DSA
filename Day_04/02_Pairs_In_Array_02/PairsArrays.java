@@ -13,7 +13,8 @@ public class PairsArrays {
             }
             System.out.println(); //new line for next pair
         }
-        System.out.println("Total pairs printed: " + tp); //total pairs printed: 50  (2*5) = 100 pairs in total for given array. 100 = 5*20 pairs in each pair. 5 pairs in each pair * 20 pairs per pair = 100 pairs in total. 100 = 5*20 pairs in each pair. 5 pairs in each pair *
+        System.out.println("Total pairs printed: " + tp); //total pairs printed
+        // 10 pairs printed
     }
 
     public static void main(String[] args) {
