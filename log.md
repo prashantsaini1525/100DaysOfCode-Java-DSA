@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 1: May 07, 2025 
+### Day 1: May 07, 2025
 
 **Today's Progress**: Learned how to create arrays in Java, took input using Scanner, printed values, and passed the array to a method to observe changes.
 
@@ -31,3 +31,19 @@
 **Thoughts** This deep dive into two-pointer methods and nested loops strengthened my understanding of in-place algorithms and reinforced how mathematical reasoning can validate code outputs. Feeling more confident about array manipulations! 💪
 
 **Link(s) to work**: [Day_04](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_04)
+
+### Day 5: May 11, 2025
+
+**Today's Progress**: Implemented a method to print all subarrays of a given array in Java. This includes:
+
+- **Single-element subarrays**: Each individual element of the array.
+
+- **Multi-element subarrays**: Subarrays containing at least two elements. This is achieved by starting the inner loop (`j`) from `i + 1`, ensuring each subarray has at least two elements.
+
+- **Sum of each subarray**: Calculated and printed the sum of elements for each subarray.
+
+- **Maximum and minimum of each subarray**: For each subarray, determined and printed the maximum and minimum values.
+
+**Thoughts** This exercise enhanced my understanding of array manipulation and the importance of nested loops in generating subarrays. It also reinforced the significance of calculating sum, maximum, and minimum values for each subarray, which is crucial for various algorithmic problems. 💪
+
+**Link(s) to work**: [Day_05](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_05)
