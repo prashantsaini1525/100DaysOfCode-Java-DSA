@@ -30,7 +30,9 @@ public class SubArray {
                 System.out.println("] -> Sum: " + sum); // Print subarray and its sum
                 System.out.println();
             }
-            System.out.println("-------------------");
+            if (i < numbers.length - 1) {
+                System.out.println("-------------------"); // Separator after each iteration of the outer loop, except the last one
+            }
         }
         // Print the total number of subarrays, max sum and min sum
         System.out.println("Total subarrays printed: " + ts); //total subarrays printed: 15
