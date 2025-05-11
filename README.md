@@ -42,5 +42,5 @@ Feel free to follow my journey, provide feedback, or collaborate on projects!
 
 - **Portfolio** [Link](https://prashant-pi.vercel.app/)
 - **GitHub**: [prashantsaini1525](https://github.com/prashantsaini1525)
-- **LinkedIn** [prashantssaini](www.linkedin.com/in/prashantssaini)
+- **LinkedIn** [prashantssaini](https://www.linkedin.com/in/prashantssaini/)
 - **Twitter**: [prashant2_saini](https://x.com/prashant2_saini)
