@@ -47,3 +47,17 @@
 **Thoughts** This exercise enhanced my understanding of array manipulation and the importance of nested loops in generating subarrays. It also reinforced the significance of calculating sum, maximum, and minimum values for each subarray, which is crucial for various algorithmic problems. 💪
 
 **Link(s) to work**: [Day_05](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_05)
+
+### Day 6: May 12, 2025
+
+**Today's Progress**: Went full brute-force! Generated every possible subarray, printed each one, and tracked both the maximum and minimum subarray sums in Java using triple nested loops. 🚀
+
+**Highlights**:
+
+* Built three nested loops to collect subarrays and calculate their sums on the fly.
+* Maintained `maxSum` and `minSum` variables initialized to extreme values to capture global highs and lows.
+* Printed each subarray with its sum for clear, step-by-step validation.
+
+**Thoughts**: Diving into brute-force solidifies the foundations before moving to optimizations. Understanding the mechanics of each loop iteration fuels smarter algorithm design later! 💪
+
+**Link(s) to work:** [Day_06](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_06)
