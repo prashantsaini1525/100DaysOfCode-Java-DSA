@@ -1,120 +1,211 @@
-# 📘 Understanding Subarrays in Java
+# 📘 Brute-Force Subarray Algorithms in Java
 
-## 🧠 What is a Subarray?
+## 🧠 What is a Brute-Force Algorithm?
 
-A **subarray** is a contiguous portion of an array. For example, given the array `[1, 2, 3]`, the subarrays include:
+A **brute-force algorithm** is an exhaustive search technique that systematically explores all possible candidates until the solution is found ([GeeksforGeeks](https://www.geeksforgeeks.org/brute-force-approach-and-its-pros-and-cons)). It is straightforward but often inefficient for large inputs.
 
-- `[1]`
-- `[1, 2]`
-- `[1, 2, 3]`
-- `[2]`
-- `[2, 3]`
-- `[3]`
+## 🔍 What is a Subarray?
 
-Understanding subarrays is fundamental in various algorithmic problems, such as finding the maximum subarray sum, checking for subarrays with a given sum, etc.
+A **subarray** is a contiguous portion of an array. An array of length *n* has $\frac{n(n+1)}{2}$ possible subarrays, counting every pair of start and end indices (i ≤ j).
 
-## 🛠️ Approach: Brute Force
+## 🛠️ Approach: Enumerating and Summing Subarrays
 
-This Java program uses a **brute-force** approach to print all possible contiguous subarrays of a given array. The method involves:
+We use three nested loops:
 
-1. **Outer Loop (`start` index):** Iterates from the beginning to the end of the array.
-2. **Middle Loop (`end` index):** Iterates from the `start` index to the end of the array.
-3. **Inner Loop (`k` index):** Iterates from the `start` to the `end` index, printing each element to form a subarray.
+1. **Outer Loop (i)**: chooses the start index of the subarray.
+2. **Middle Loop (j)**: chooses the end index (≥ i).
+3. **Inner Loop (k)**: sums elements between i and j.
 
-This method ensures that all possible subarrays are covered.
+This guarantees every contiguous subarray is evaluated.
 
-## ⏱️ Time and Space Complexity
+### ⏱️ Time Complexity: O(n³)
 
-- **Time Complexity:** O(n³)
-  - There are O(n²) pairs of start and end indices.
-  - For each pair, printing the subarray takes O(n) time in the worst case.
-  - Total time complexity is O(n²) * O(n) = O(n³).
+* O(n²) start/end pairs × O(n) summation = O(n³).
 
-- **Space Complexity:** O(1)
-  - The algorithm uses a constant amount of extra space, regardless of the input size.
+### 📦 Space Complexity: O(1)
 
-## 📄 Java Code
+* Only constant extra variables (`currSum`, `maxSum`, `minSum`, counters) are used.
+
+---
+
+## 1️⃣ Max Subarray Sum (Q1)
+
+**Goal:** Find the maximum-sum contiguous subarray.
 
 ```java
-public class SubArray {
+// Time: O(n^3), Space: O(1)
+public class MaxSubArraySum {
+    public static void maxSubArraySum(int[] numbers) {
+        int currSum;
+        int maxSum = Integer.MIN_VALUE;
 
-    public static void printSubarrays(int[] numbers) {
-        int n = numbers.length;
-        // Iterate over all possible starting indices
-        for (int start = 0; start < n; start++) {
-            // Iterate over all possible ending indices for each start
-            for (int end = start; end < n; end++) {
-                // Print elements from start to end indices
-                for (int k = start; k <= end; k++) {
-                    System.out.print(numbers[k] + " ");
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j < numbers.length; j++) {
+                currSum = 0;
+                for (int k = i; k <= j; k++) {
+                    currSum += numbers[k];
                 }
-                System.out.println(); // Newline after each subarray
+                System.out.println("Sum [" + i + ".." + j + "] = " + currSum);
+                if (currSum > maxSum) {
+                    maxSum = currSum;
+                }
             }
-            System.out.println("-------------------"); // Separator after each set of subarrays starting at 'start'
+            System.out.println("-------------------");
         }
+        System.out.println("Max Sum : " + maxSum);
     }
 
     public static void main(String[] args) {
-        int[] numbers = {2, 4, 6, 8, 10};
-        printSubarrays(numbers);
+        int[] numbers = {1, -2, 6, -1, 3};
+        maxSubArraySum(numbers);
     }
 }
 ```
 
-## 🔍 Example Output
+**Explanation:**
 
-Given the input array: `[2, 4, 6, 8, 10]`
-
-The program will output:
-
-```
-2 
-2 4 
-2 4 6 
-2 4 6 8 
-2 4 6 8 10 
--------------------
-4 
-4 6 
-4 6 8 
-4 6 8 10 
--------------------
-6 
-6 8 
-6 8 10 
--------------------
-8 
-8 10 
--------------------
-10 
--------------------
-```
-
-Each group of subarrays starting with the same `start` index is separated by a line of dashes for clarity.
-
-## 📌 Key Concepts
-
-- **Subarrays vs. Subsequences:**
-  - *Subarrays* are contiguous sequences within the array.
-  - *Subsequences* can be non-contiguous but maintain the order of elements.
-
-- **Number of Subarrays:**
-  - An array of size `n` has `n*(n+1)/2` possible subarrays.
-
-## ⚠️ Limitations
-
-- **Performance:**
-  - Due to its O(n³) time complexity, this approach is inefficient for large arrays.
-
-- **Optimization:**
-  - For specific problems like finding the maximum subarray sum, more efficient algorithms like Kadane's Algorithm can be used, which operates in O(n) time.
-
-## ✅ Recommendations
-
-- **Educational Use:**
-  - This code is excellent for learning purposes to understand how subarrays can be generated.
-
-- **Practical Applications:**
-  - For performance-critical applications, consider implementing more efficient algorithms tailored to the specific problem.
+* Two loops to define subarray bounds, one to sum.
+* Updates `maxSum` when a larger sum is found.
 
 ---
+
+## 2️⃣ Min Subarray Sum (Q2)
+
+**Goal:** Find the minimum-sum contiguous subarray.
+
+```java
+// Time: O(n^3), Space: O(1)
+public class MinSubArraySum {
+    public static void minSubArraySum(int[] numbers) {
+        int currSum;
+        int minSum = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j < numbers.length; j++) {
+                currSum = 0;
+                for (int k = i; k <= j; k++) {
+                    currSum += numbers[k];
+                }
+                System.out.println("Sum [" + i + ".." + j + "] = " + currSum);
+                if (currSum < minSum) {
+                    minSum = currSum;
+                }
+            }
+            System.out.println("-------------------");
+        }
+        System.out.println("Min Sum : " + minSum);
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, -2, 6, -1, 3};
+        minSubArraySum(numbers);
+    }
+}
+```
+
+**Explanation:**
+
+* Identical enumeration, but tracks smallest sum via `minSum`.
+
+---
+
+## 3️⃣ Max, Min, and Total Count (Q3)
+
+**Goal:** Print each subarray with its sum, and track max, min, and total count.
+
+```java
+// Time: O(n^3), Space: O(1)
+public class MaxSubArraySum {
+    public static void maxSubArraySum(int[] numbers) {
+        int ts = 0;               // Total subarray count
+        int currSum;
+        int maxSum = Integer.MIN_VALUE;
+        int minSum = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j < numbers.length; j++) {
+                currSum = 0;
+                System.out.print("[");
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + (k == j ? "" : ", "));
+                    currSum += numbers[k];
+                }
+                System.out.println("] -> Sum: " + currSum);
+                if (currSum > maxSum) maxSum = currSum;
+                if (currSum < minSum) minSum = currSum;
+                ts++;
+            }
+            System.out.println("-------------------");
+        }
+        System.out.println("Max Sum : " + maxSum);
+        System.out.println("Min Sum : " + minSum);
+        System.out.println("Total subarrays printed: " + ts);
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, -2, 6, -1, 3};
+        maxSubArraySum(numbers);
+    }
+}
+```
+
+**Explanation:**
+
+* Adds `ts` counter.
+* Prints each subarray bracketed, then updates max, min, and count.
+
+---
+
+## 4️⃣ Handling Different Input (Q4)
+
+**Goal:** Same as Q3 but with different test arrays.
+
+```java
+// Time: O(n^3), Space: O(1)
+public class MaxSubArraySum {
+    public static void maxSubArraySum(int[] numbers) {
+        int ts = 0;
+        int currSum;
+        int maxSum = Integer.MIN_VALUE;
+        int minSum = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j < numbers.length; j++) {
+                currSum = 0;
+                System.out.print("[");
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + (k == j ? "" : ", "));
+                    currSum += numbers[k];
+                }
+                System.out.println("] -> Sum: " + currSum);
+                if (currSum > maxSum) maxSum = currSum;
+                if (currSum < minSum) minSum = currSum;
+                ts++;
+            }
+            System.out.println("-------------------");
+        }
+        System.out.println("Max Sum : " + maxSum);
+        System.out.println("Min Sum : " + minSum);
+        System.out.println("Total subarrays printed: " + ts);
+    }
+
+    public static void main(String[] args) {
+        // Test with all negatives or mixed
+        int[] numbers = {-8, 3};
+        maxSubArraySum(numbers);
+    }
+}
+```
+
+**Explanation:**
+
+* Demonstrates behavior when all values are negative or mixed.
+* The algorithm still enumerates every subarray correctly.
+
+---
+
+## 📌 Key Takeaways
+
+* Brute-force is easy to implement but only suitable for small n.
+* Always verify boundaries (inclusive loops) and initialize extremes properly.
+* For larger inputs, consider optimized approaches (e.g., Kadane’s in O(n)).
