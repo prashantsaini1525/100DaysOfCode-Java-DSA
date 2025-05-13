@@ -54,10 +54,29 @@
 
 **Highlights**:
 
-* Built three nested loops to collect subarrays and calculate their sums on the fly.
-* Maintained `maxSum` and `minSum` variables initialized to extreme values to capture global highs and lows.
-* Printed each subarray with its sum for clear, step-by-step validation.
+- Built three nested loops to collect subarrays and calculate their sums on the fly.
+- Maintained `maxSum` and `minSum` variables initialized to extreme values to capture global highs and lows.
+- Printed each subarray with its sum for clear, step-by-step validation.
 
 **Thoughts**: Diving into brute-force solidifies the foundations before moving to optimizations. Understanding the mechanics of each loop iteration fuels smarter algorithm design later! 💪
 
 **Link(s) to work:** [Day_06](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_06)
+
+### Day 7: May 13, 2025
+
+**Today's Progress**: Applied the prefix sum approach to efficiently calculate maximum and minimum subarray sums, printing each prefix max, prefix min, and both values together in Java with quadratic time complexity.
+
+**Detailed Explanation**:
+
+- **Prefix Array Construction**: Created a `prefix[]` array where `prefix[i]` equals the sum of `numbers[0]` through `numbers[i]`, computed in a single O(n) pass.
+- **Subarray Sum Retrieval**: For each start index `i` and end index `j` (i ≤ j), computed the subarray sum in O(1) as `prefix[j] - (i > 0 ? prefix[i-1] : 0)`.
+- **Tracking Extremes**:
+
+  - **If-Statements**: Initially, compared `currSum` with `maxSum` and `minSum` using `if` checks to update extremes.
+  - **Math Utility Shortcuts**: Refactored using `maxSum = Math.max(maxSum, currSum)` and `minSum = Math.min(minSum, currSum)` for cleaner, more concise updates.
+
+- **Combined Reporting**: Inside the loops, printed current subarray sum alongside updated prefix max/min for real-time insight.
+
+**Thoughts**: Using prefix sums sliced down redundant summations and deepened my grasp of cumulative techniques. Introducing Java’s `Math.max`/`Math.min` methods made the code more elegant and readable. Visualizing how prefix max and min evolve sharpened my intuition for more advanced sliding window and Kadane’s algorithms next! ⚡️
+
+**Link(s) to work:** [Day_07]()
