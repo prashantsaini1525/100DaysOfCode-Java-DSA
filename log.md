@@ -79,4 +79,4 @@
 
 **Thoughts**: Using prefix sums sliced down redundant summations and deepened my grasp of cumulative techniques. Introducing Java’s `Math.max`/`Math.min` methods made the code more elegant and readable. Visualizing how prefix max and min evolve sharpened my intuition for more advanced sliding window and Kadane’s algorithms next! ⚡️
 
-**Link(s) to work:** [Day_07]()
+**Link(s) to work:** [Day_07](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_07)
