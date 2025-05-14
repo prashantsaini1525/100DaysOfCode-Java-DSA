@@ -80,3 +80,18 @@
 **Thoughts**: Using prefix sums sliced down redundant summations and deepened my grasp of cumulative techniques. Introducing Java’s `Math.max`/`Math.min` methods made the code more elegant and readable. Visualizing how prefix max and min evolve sharpened my intuition for more advanced sliding window and Kadane’s algorithms next! ⚡️
 
 **Link(s) to work:** [Day_07](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_07)
+
+### Day 8: May 14, 2025
+
+**Today's Progress**: Stepped into the world of efficient algorithms with **Kadane’s Algorithm**! Solved the **maximum subarray sum problem** in linear time **O(n)** using a single loop and constant space. 🚀
+
+**Highlights**:
+
+- Used a single pass to **track running sum (`currentSum`)** and **update the best sum (`maxSum`)** seen so far.
+- Learned that if `currentSum` drops below 0, it's better to **restart** the subarray from the next index.
+- Applied `Math.max()` to constantly compare and store the best subarray result on the fly.
+- Realized why Kadane’s is a **game-changer** compared to brute-force and prefix methods—it’s clean, fast, and elegant!
+
+**Thoughts**: Kadane’s Algorithm blew my mind with its simplicity and power. After wrestling with O(n²) and O(n³) methods, solving the same problem in O(n) feels like upgrading to superhero mode. Tomorrow, I’ll learn how Kadane’s works with **all-negative arrays**. 💪
+
+**Link(s) to work:** [Day_08](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_08)
