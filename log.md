@@ -95,3 +95,18 @@
 **Thoughts**: Kadane’s Algorithm blew my mind with its simplicity and power. After wrestling with O(n²) and O(n³) methods, solving the same problem in O(n) feels like upgrading to superhero mode. Tomorrow, I’ll learn how Kadane’s works with **all-negative arrays**. 💪
 
 **Link(s) to work:** [Day_08](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_08)
+
+### Day 9: May 15, 2025
+
+**Today's Progress**: Took Kadane’s Algorithm to the **next level** by applying it to arrays with **all negative numbers**. Gained clarity on why initializing with the **first element** is crucial when negative values dominate. 💡
+
+**Highlights**:
+
+* Applied a refined version of Kadane’s Algorithm tailored for **all-negative arrays**.
+* Learned that initializing both `currentSum` and `maxSum` with the **first element** handles edge cases properly.
+* Compared two clean implementations using `Math.max()` to dynamically choose between restarting or continuing the subarray.
+* Reinforced the principle that even in negative-only arrays, the **least negative** number is the correct answer.
+
+**Thoughts**: Handling edge cases is where real understanding begins. Today’s lesson showed how a powerful algorithm like Kadane’s can still trip you up if the initial values aren’t carefully chosen. Tomorrow, I’ll look into printing subarrays along with their max sums.
+
+**Link(s) to work:** [Day\_09](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_09)
