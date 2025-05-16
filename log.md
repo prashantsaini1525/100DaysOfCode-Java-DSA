@@ -110,3 +110,11 @@
 **Thoughts**: Handling edge cases is where real understanding begins. Today’s lesson showed how a powerful algorithm like Kadane’s can still trip you up if the initial values aren’t carefully chosen. Tomorrow, I’ll look into printing subarrays along with their max sums.
 
 **Link(s) to work:** [Day\_09](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_09)
+
+### Day 10: May 16, 2025
+
+**Today's Progress**: Implemented the Trapping Rain Water solution in Java using auxiliary `leftMax[]` and `rightMax[]` arrays to achieve linear time **O(n)** and linear space **O(n)**. Validated that the sample elevation map `{4, 2, 0, 6, 3, 2, 5}` traps **11** units of water in total.
+
+**Thoughts**: Correcting my initial output reinforced the importance of manual verification and test-case walkthroughs. Precomputing boundary arrays simplifies the core logic, and next I’ll refine this further with a two-pointer method to reduce space to **O(1)**.
+
+**Link(s) to work**: [Day_10](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_10/01_TrappingRainWater_Concept_01)
