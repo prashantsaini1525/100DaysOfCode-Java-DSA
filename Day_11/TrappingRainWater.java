@@ -3,7 +3,7 @@
 //this approach is using 2 arrays to store left max and right max boundaries
 // Approach: Dynamic Programming using Auxiliary Arrays
 
-public class Ques1 {
+public class TrappingRainWater {
 
     public static int trappedRainWater(int height[]) {
         int n = height.length;
