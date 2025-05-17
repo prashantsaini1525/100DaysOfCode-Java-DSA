@@ -118,3 +118,11 @@
 **Thoughts**: Correcting my initial output reinforced the importance of manual verification and test-case walkthroughs. Precomputing boundary arrays simplifies the core logic, and next I’ll refine this further with a two-pointer method to reduce space to **O(1)**.
 
 **Link(s) to work**: [Day_10](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_10/01_TrappingRainWater_Concept_01)
+
+### Day 11: May 17, 2025
+
+**Today's Progress**: Solved the Trapping Rain Water problem on a new elevation map `{0,1,0,2,1,0,1,3,2,1,2,1}` using the two-array boundary approach in Java. Confirmed that the algorithm correctly computes **6** units of trapped water for this input.
+
+**Thoughts**: Walking through each index of the array and comparing `leftMax[i]` and `rightMax[i]` really cemented my understanding of how boundary preprocessing drives the solution. Seeing the result match the expected 6 units strengthened my confidence. Next, I’ll implement the optimized two-pointer version to bring space down to O(1)!
+
+**Link(s) to work**: [Day_11](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_11)
