@@ -126,3 +126,11 @@
 **Thoughts**: Walking through each index of the array and comparing `leftMax[i]` and `rightMax[i]` really cemented my understanding of how boundary preprocessing drives the solution. Seeing the result match the expected 6 units strengthened my confidence. Next, I’ll implement the optimized two-pointer version to bring space down to O(1)!
 
 **Link(s) to work**: [Day_11](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_11)
+
+### Day 12: May 18, 2025
+
+**Today's Progress**: Re‐solved the Trapping Rain Water problem on `{0,1,0,2,1,0,1,3,2,1,2,1}` using the **two-pointer** technique in Java. Instead of extra arrays, I maintained `leftMax` and `rightMax` on the fly and moved two pointers inward, achieving **O(n)** time and **O(1)** space.
+
+**Thoughts**: This approach feels sleeker—no auxiliary arrays cluttering memory. By always advancing the pointer on the smaller side and updating its max boundary, I ensure each element’s trapped water is calculated precisely. It reinforces how two-pointer patterns can optimize both speed and space. Next, I’ll practice more two-pointer problems like “Container With Most Water” and “3Sum.”
+
+**Link(s) to work**: [Day_12](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_12)
