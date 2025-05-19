@@ -134,3 +134,11 @@
 **Thoughts**: This approach feels sleeker—no auxiliary arrays cluttering memory. By always advancing the pointer on the smaller side and updating its max boundary, I ensure each element’s trapped water is calculated precisely. It reinforces how two-pointer patterns can optimize both speed and space. Next, I’ll practice more two-pointer problems like “Container With Most Water” and “3Sum.”
 
 **Link(s) to work**: [Day_12](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_12)
+
+### Day 13: May 19, 2025
+
+**Today's Progress**: Implemented the Trapping Rain Water solution using the **brute-force** approach in Java. For each bar, I scanned left and right to find the maximum boundaries, then computed the trapped water at that index. Verified that the sample elevation map `{0,1,0,2,1,0,1,3,2,1,2,1}` still yields **6** units of total trapped water.
+
+**Thoughts**: Although this method runs in **O(n²)** time due to nested scans, it reinforced my understanding of boundary conditions and water-level calculation. Walking through each index manually gave me deeper insight before moving on to more optimized techniques. Next up: revisit two-pointer and compare performance on larger datasets.
+
+**Link(s) to work**: [Day_13](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_13)
