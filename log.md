@@ -142,3 +142,17 @@
 **Thoughts**: Although this method runs in **O(n²)** time due to nested scans, it reinforced my understanding of boundary conditions and water-level calculation. Walking through each index manually gave me deeper insight before moving on to more optimized techniques. Next up: revisit two-pointer and compare performance on larger datasets.
 
 **Link(s) to work**: [Day_13](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_13)
+
+### Day 14: May 21, 2025
+
+**Today's Progress**: Implemented LeetCode 121 “Best Time to Buy and Sell Stock” in Java using two efficient approaches:
+
+- **Method 1**: Tracked the minimum price seen so far (`buyPrice`) and, for each day, calculated `profit = prices[i] - buyPrice`; updated `maxProfit` when `profit` was higher.  
+- **Method 2**: First updated `buyPrice` whenever a lower price appeared, then computed `profit = prices[i] - buyPrice` and updated `maxProfit`.  
+
+Both methods run in **O(n)** time and **O(1)** space.
+
+**Thoughts**: This problem reinforced the greedy paradigm—always buy at the lowest price before selling. Tracking the minimum price and updating profit in one pass makes the solution both simple and optimal. Next, I’ll explore multi-transaction stock problems.
+
+**Link(s) to work**: [Day_14](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_4)
+
