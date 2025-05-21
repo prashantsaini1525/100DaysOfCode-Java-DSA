@@ -154,5 +154,5 @@ Both methods run in **O(n)** time and **O(1)** space.
 
 **Thoughts**: This problem reinforced the greedy paradigm—always buy at the lowest price before selling. Tracking the minimum price and updating profit in one pass makes the solution both simple and optimal. Next, I’ll explore multi-transaction stock problems.
 
-**Link(s) to work**: [Day_14](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_4)
+**Link(s) to work**: [Day_14](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_14)
 
