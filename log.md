@@ -102,14 +102,14 @@
 
 **Highlights**:
 
-* Applied a refined version of Kadane’s Algorithm tailored for **all-negative arrays**.
-* Learned that initializing both `currentSum` and `maxSum` with the **first element** handles edge cases properly.
-* Compared two clean implementations using `Math.max()` to dynamically choose between restarting or continuing the subarray.
-* Reinforced the principle that even in negative-only arrays, the **least negative** number is the correct answer.
+- Applied a refined version of Kadane’s Algorithm tailored for **all-negative arrays**.
+- Learned that initializing both `currentSum` and `maxSum` with the **first element** handles edge cases properly.
+- Compared two clean implementations using `Math.max()` to dynamically choose between restarting or continuing the subarray.
+- Reinforced the principle that even in negative-only arrays, the **least negative** number is the correct answer.
 
 **Thoughts**: Handling edge cases is where real understanding begins. Today’s lesson showed how a powerful algorithm like Kadane’s can still trip you up if the initial values aren’t carefully chosen. Tomorrow, I’ll look into printing subarrays along with their max sums.
 
-**Link(s) to work:** [Day\_09](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_09)
+**Link(s) to work:** [Day_09](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_09)
 
 ### Day 10: May 16, 2025
 
@@ -147,8 +147,8 @@
 
 **Today's Progress**: Implemented LeetCode 121 “Best Time to Buy and Sell Stock” in Java using two efficient approaches:
 
-- **Method 1**: Tracked the minimum price seen so far (`buyPrice`) and, for each day, calculated `profit = prices[i] - buyPrice`; updated `maxProfit` when `profit` was higher.  
-- **Method 2**: First updated `buyPrice` whenever a lower price appeared, then computed `profit = prices[i] - buyPrice` and updated `maxProfit`.  
+- **Method 1**: Tracked the minimum price seen so far (`buyPrice`) and, for each day, calculated `profit = prices[i] - buyPrice`; updated `maxProfit` when `profit` was higher.
+- **Method 2**: First updated `buyPrice` whenever a lower price appeared, then computed `profit = prices[i] - buyPrice` and updated `maxProfit`.
 
 Both methods run in **O(n)** time and **O(1)** space.
 
@@ -156,3 +156,15 @@ Both methods run in **O(n)** time and **O(1)** space.
 
 **Link(s) to work**: [Day_14](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_14)
 
+### Day 15: May 23, 2025
+
+**Today's Progress**: Solved LeetCode 122 — _Best Time to Buy & Sell Stock II_ in Java with two one-pass greedy strategies to handle unlimited transactions:
+
+- **Method 1**: Traverse from day 1 to n–1, and whenever `prices[i] > prices[i-1]`, add `prices[i] – prices[i-1]` to `totalProfit`. This captures every small upward swing.
+- **Method 2**: Maintain a `startPrice` initialized to `prices[0]`. For each day `i`, if `prices[i] > startPrice` add the difference to `totalProfit`, then update `startPrice = prices[i]`. This “moving window” style yields the same sum of gains.
+
+Both approaches run in **O(n)** time and **O(1)** space, efficiently accumulating all positive daily gains.
+
+**Thoughts**: Summing each tiny profit rather than seeking global valleys and peaks makes the solution both elegant and foolproof. Seeing that two slightly different loops produce identical results deepened my appreciation for greedy patterns. Next, I’ll explore variations with transaction fees and cooldown periods.
+
+**Link(s) to work**: [Day_15](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_15)
