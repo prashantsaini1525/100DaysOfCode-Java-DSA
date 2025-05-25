@@ -168,3 +168,14 @@ Both approaches run in **O(n)** time and **O(1)** space, efficiently accumulatin
 **Thoughts**: Summing each tiny profit rather than seeking global valleys and peaks makes the solution both elegant and foolproof. Seeing that two slightly different loops produce identical results deepened my appreciation for greedy patterns. Next, I’ll explore variations with transaction fees and cooldown periods.
 
 **Link(s) to work**: [Day_15](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_15)
+
+### Day 16: May 25, 2025
+
+**Today's Progress**: Revisited LeetCode 122 — *Best Time to Buy & Sell Stock II*, this time implementing the **cleanest** and most **streamlined** version of the greedy solution. Instead of tracking start prices or making complex decisions, I simply summed every upward swing between consecutive days.
+
+- **Approach**: If `prices[i] > prices[i-1]`, I immediately added `prices[i] - prices[i-1]` to the total profit.
+- **Efficiency**: Runs in **O(n)** time and **O(1)** space with just one loop, one condition, and one accumulator. It’s lightning-fast and crystal clear.
+
+**Thoughts**: I loved how elegant and minimalistic this version is—perfect for interviews or quick implementations. The “every step up is profit” mindset simplifies everything and reinforces how greedy logic can be both powerful and easy to grasp.
+
+**Link(s) to work**: [Day_16](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_16)
