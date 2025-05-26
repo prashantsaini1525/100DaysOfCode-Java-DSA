@@ -171,7 +171,7 @@ Both approaches run in **O(n)** time and **O(1)** space, efficiently accumulatin
 
 ### Day 16: May 25, 2025
 
-**Today's Progress**: Revisited LeetCode 122 — *Best Time to Buy & Sell Stock II*, this time implementing the **cleanest** and most **streamlined** version of the greedy solution. Instead of tracking start prices or making complex decisions, I simply summed every upward swing between consecutive days.
+**Today's Progress**: Revisited LeetCode 122 — _Best Time to Buy & Sell Stock II_, this time implementing the **cleanest** and most **streamlined** version of the greedy solution. Instead of tracking start prices or making complex decisions, I simply summed every upward swing between consecutive days.
 
 - **Approach**: If `prices[i] > prices[i-1]`, I immediately added `prices[i] - prices[i-1]` to the total profit.
 - **Efficiency**: Runs in **O(n)** time and **O(1)** space with just one loop, one condition, and one accumulator. It’s lightning-fast and crystal clear.
@@ -179,3 +179,26 @@ Both approaches run in **O(n)** time and **O(1)** space, efficiently accumulatin
 **Thoughts**: I loved how elegant and minimalistic this version is—perfect for interviews or quick implementations. The “every step up is profit” mindset simplifies everything and reinforces how greedy logic can be both powerful and easy to grasp.
 
 **Link(s) to work**: [Day_16](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_16)
+
+### Day 17: May 26, 2025
+
+**Today's Progress**
+
+- Solved two array problems from Apna College:
+  1. **Duplicate Check** (3 methods)
+  2. **Rotated Array Search** (2 methods)
+
+**What I Learned**
+
+- **Duplicate Check**:
+  - Brute-force is simple but slow (O(n²)).
+  - Sorting lets you spot repeats by checking neighbors (O(n log n)).
+  - A HashSet tracks seen values instantly (O(n)).
+- **Rotated Search**:
+  - You can do a single modified binary search by identifying the sorted half.
+  - Finding the rotation pivot and then doing a normal binary search also works in pure O(log n).
+
+**Key Takeaway**  
+Pick the simplest approach that meets your performance needs, and use the array’s inherent order to guide your search.
+
+**Link(s) to work**: [Day_17](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_17)
