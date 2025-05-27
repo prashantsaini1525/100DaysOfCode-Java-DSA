@@ -202,3 +202,18 @@ Both approaches run in **O(n)** time and **O(1)** space, efficiently accumulatin
 Pick the simplest approach that meets your performance needs, and use the array’s inherent order to guide your search.
 
 **Link(s) to work**: [Day_17](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_17)
+
+### Day 18: May 27, 2025
+
+**Today's Progress**
+
+- Solved LeetCode 121 (Best Time to Buy & Sell Stock) with a one-pass greedy scan.
+- Solved LeetCode 42 (Trapping Rain Water) using three methods: boundary arrays, two-pointer, and condensed two-pointer.
+
+**What I Learned**
+
+- For Stock I, track the lowest buy price before each day to achieve O(n)/O(1).
+- For Rain Water, start with the clear DP array approach, then refine to the memory-efficient two-pointer variants.
+- Numbering methods (Method 1, 2, 3) keeps my notes organized and easy to follow.
+
+**Link(s) to work** [Day_18](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_18)
