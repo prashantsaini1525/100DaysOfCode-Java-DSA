@@ -217,3 +217,24 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Numbering methods (Method 1, 2, 3) keeps my notes organized and easy to follow.
 
 **Link(s) to work** [Day_18](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_18)
+
+### Day 19: May 28, 2025
+
+**Today's Progress**
+
+- Wrapped up Apna College arrays assignment with **3Sum** (LeetCode 15) in two ways: brute-force + dedupe, and sort + two-pointer.
+- Finalized all five array puzzles over Days 17–19.
+
+**What I Learned**
+
+- **Brute-Force 3Sum** confirms correctness on small inputs before optimizing.
+- **Sorting + Two-Pointer** scales to larger arrays, elegantly handling sums and duplicates in O(n²).
+- Organizing methods by clarity vs. performance helps choose the right tool.
+
+**Key Insights**
+
+- Always validate with a simple approach before refining.
+- Sorting unlocks powerful two-pointer patterns for sum problems.
+- Clear duplicate-skipping logic is essential for unique result sets.
+
+**Link(s) to work** [Day_19 3Sum Solutions](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_19/)
