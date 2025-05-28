@@ -237,4 +237,4 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Sorting unlocks powerful two-pointer patterns for sum problems.
 - Clear duplicate-skipping logic is essential for unique result sets.
 
-**Link(s) to work** [Day_19 3Sum Solutions](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_19/)
+**Link(s) to work** [Day_19](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_19/)
