@@ -238,3 +238,18 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Clear duplicate-skipping logic is essential for unique result sets.
 
 **Link(s) to work** [Day_19](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_19/)
+
+### Day 20: May 29, 2025
+
+**Today's Progress**
+
+- Explored Bubble Sort fundamentals.
+- Implemented two variants: standard Bubble Sort and Bubble Sort with swap counting.
+
+**What I Learned**
+
+- How repeated adjacent swaps bubble the largest elements to the end.
+- Measuring swap count reveals the initial disorder of data.
+- Bubble Sort shines as a teaching tool, especially on nearly sorted inputs.
+
+**Link(s) to work** [Day_20](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_20)
