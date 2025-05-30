@@ -253,3 +253,20 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Bubble Sort shines as a teaching tool, especially on nearly sorted inputs.
 
 **Link(s) to work** [Day_20](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_20)
+
+### Day 21: May 30, 2025
+
+**Today's Progress**
+
+- Learned Selection Sort in depth with examples and pseudocode.
+- Compared it with Bubble Sort to see how it minimizes swaps.
+- Understood how Selection Sort works step-by-step on real examples.
+
+**What I Learned**
+
+- Selection Sort always picks the smallest element and places it at the right spot.
+- Even though time complexity is still O(nÂ²), it performs fewer swaps than Bubble Sort.
+- It's a good sorting choice when swaps are costly.
+- Useful on small datasets or for educational understanding of sorting mechanics.
+
+**Link(s) to work** [Day_21](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_21)
