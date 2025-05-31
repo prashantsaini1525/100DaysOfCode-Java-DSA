@@ -270,3 +270,22 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Useful on small datasets or for educational understanding of sorting mechanics.
 
 **Link(s) to work** [Day_21](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_21)
+
+### Day 22: May 31, 2025
+
+**Today's Progress**
+
+- Explored three variants of **Selection Sort**:
+  1. Basic always-swap version.
+  2. Selection Sort returning swap count.
+  3. Optimized conditional swap version counting only effective swaps.
+
+**What I Learned**
+
+- Basic Selection Sort always swaps every pass, even if unnecessary.
+- Returning swap count helps track operation quantity but counts redundant swaps too.
+- Conditional swap optimization reduces unnecessary swaps, reflecting actual disorder.
+- All variants run in O(nÂ²) time and use O(1) space.
+- Understanding swap behavior deepens insight into sorting mechanics and input array disorder.
+
+**Link(s) to work** [Day_22](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_22)
