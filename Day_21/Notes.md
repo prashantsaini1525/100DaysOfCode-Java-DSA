@@ -1,130 +1,123 @@
-# 📘 Day 21: Lecture 4 – Selection Sort
+# 📘 Day 21: Selection Sort Deep Dive
 
-On Day 21 of my #100DaysOfCode, I dove into **Selection Sort**, a stepping‑stone from Bubble Sort that minimizes swaps by always choosing the smallest unsorted element and placing it in its rightful position.
+Day 21 of my #100DaysOfCode journey was all about **Selection Sort**, one of the first stepping-stones after Bubble Sort. I explored two main flavors:
 
----
+1. **Standard Selection Sort**: Picking the minimum each pass and placing it in its correct spot.
+2. **Selection Sort with Swap Counting**: Adding a counter to understand how many actual exchanges happen.
 
-## Lecture 4: Selection Sort
-
-Imagine you have a messy deck of cards and you want to pick out the smallest card one by one and place each in its correct position. **Selection Sort** works just like that: it repeatedly finds the smallest (or largest) unsorted item and moves it to its final sorted spot.
-
----
-
-## How Selection Sort Works Step by Step
-
-1. **Start at the beginning** of the list (index 0). Consider this the boundary between sorted and unsorted.
-2. **Find the smallest item** in the unsorted portion of the list.
-3. **Swap** that smallest item with the first item of the unsorted portion.
-4. **Move the boundary** one position to the right.
-5. **Repeat** steps 2–4 until the entire list is sorted.
+Below is **my narrative of each approach**, including pseudocode, a step-by-step walkthrough, and key insights.
 
 ---
 
-### Visual Example 1: `[29, 10, 14, 37, 13]`
+## 🌟 Why I Chose Selection Sort Next
 
-- **Pass 1 (i = 0)**:
-  - Unsorted portion: indices 0–4 = `[29, 10, 14, 37, 13]`
-  - Smallest value: **10** at index 1.
-  - Swap with index 0: `[10, 29, 14, 37, 13]`
-  - Sorted portion: `[10]`, Unsorted now indices 1–4.
-
-- **Pass 2 (i = 1)**:
-  - Unsorted portion: `[29, 14, 37, 13]`.
-  - Smallest value: **13** at index 4.
-  - Swap with index 1: `[10, 13, 14, 37, 29]`
-  - Sorted portion: `[10, 13]`, Unsorted indices 2–4.
-
-- **Pass 3 (i = 2)**:
-  - Unsorted portion: `[14, 37, 29]`.
-  - Smallest value: **14** at index 2.
-  - Swap with index 2: no change `[10, 13, 14, 37, 29]`
-  - Sorted portion: `[10, 13, 14]`.
-
-- **Pass 4 (i = 3)**:
-  - Unsorted portion: `[37, 29]`.
-  - Smallest value: **29** at index 4.
-  - Swap with index 3: `[10, 13, 14, 29, 37]`
-  - Sorted portion: `[10, 13, 14, 29]`.
-
-- **Pass 5 (i = 4)**:
-  - Only one element `[37]` remains; already sorted.
-
-**Result after pass 5**: `[10, 13, 14, 29, 37]`
+- After Bubble Sort, I wanted a sort method that still uses simple comparisons but requires fewer swaps.
+- Selection Sort does exactly that: it finds the smallest element in the “unsorted” region and moves it into place.
+- It’s an in-place O(n²) algorithm that helps me see how swaps relate to initial array disorder.
 
 ---
 
-## Pseudocode
+## 🌱 Method 1: Standard Selection Sort
+
+**My mental model**: Imagine scanning a deck of face-up cards, each time finding the smallest card and moving it to the front, gradually building a sorted set at the left.
+
+1. **Iterate** `i` from `0` to `n − 2`. The index `i` marks the boundary between the sorted (left) and unsorted (right) portions.
+2. **Find** `minPos`, the index of the smallest element between `i` and `n − 1`.
+3. **Swap** the value at `minPos` with the value at `i`. Now the smallest unsorted element is in its final position.
+4. **Repeat** for the next `i`, shrinking the unsorted region by one.
 
 ```plaintext
-function selectionSort(array):
-    n = length of array
-    for i from 0 to n - 2:
-        minIndex = i
-        for j from i + 1 to n - 1:
-            if array[j] < array[minIndex]:
-                minIndex = j
-        if minIndex != i:
-            swap array[i] and array[minIndex]
-``` 
+for i in 0..n-2:
+  minPos = i
+  for j in i+1..n-1:
+    if arr[j] < arr[minPos]:
+      minPos = j
+  swap(arr[i], arr[minPos])
+```
 
-- **Explanation**:
-  - `minIndex` tracks the position of the smallest element in the unsorted part.
-  - After the inner loop, if `minIndex` changed, we swap the elements.
+**Step-by-step example** on `[5, 4, 1, 3, 2]`:
 
----
+- **Pass 1 (i = 0)**: unsorted = `[5,4,1,3,2]`. Smallest is `1` at index 2. Swap with index 0 ⇒ `[1, 4, 5, 3, 2]`.
+- **Pass 2 (i = 1)**: unsorted = `[4,5,3,2]`. Smallest is `2` at index 4. Swap ⇒ `[1, 2, 5, 3, 4]`.
+- **Pass 3 (i = 2)**: unsorted = `[5,3,4]`. Smallest is `3` at index 3. Swap ⇒ `[1, 2, 3, 5, 4]`.
+- **Pass 4 (i = 3)**: unsorted = `[5,4]`. Smallest is `4` at index 4. Swap ⇒ `[1, 2, 3, 4, 5]`.
+- **Pass 5 (i = 4)**: only `[5]` remains—already sorted.
 
-## Time & Space Complexity
+By the end, the array is `[1, 2, 3, 4, 5]`.
 
-- **Time (Best, Average & Worst Case)**: O(n²) — always performs full scans of the unsorted remainder.
-- **Space**: O(1) — sorts the array in-place with only constant extra variables.
+**Performance**:
 
----
+- Time: Always O(n²), because each pass does a full scan of the remaining unsorted portion.
+- Space: O(1), since we swap in-place.
 
-## Pros & Cons
+**When I’d use this**:
 
-**Pros**:
-
-- Very intuitive and easy to implement.
-- Makes at most n – 1 swaps, which is ideal when swap cost is high.
-- Requires no additional memory beyond the input array.
-
-**Cons**:
-
-- Always O(n²) time, even if the list is already partly sorted.
-- Not adaptive—performs the same work regardless of initial order.
-- Inefficient on large datasets compared to O(n log n) sorts.
+- To demonstrate sorting fundamentals.
+- On small arrays or data that’s already nearly sorted, since it only performs n−1 swaps.
 
 ---
 
-### Visual Example 2: `{5, 4, 1, 3, 2}`
+## 🌲 Method 2: Selection Sort with Swap Counting
 
-- **Pass 1 (i = 0)**:
-  - `[5, 4, 1, 3, 2]` → smallest **1** at index 2 → swap with index 0 → `[1, 4, 5, 3, 2]`
+**Why I added a swap counter**: I wanted to measure how “unsorted” the input was by counting how many actual exchanges happen.
 
-- **Pass 2 (i = 1)**:
-  - `[4, 5, 3, 2]` → smallest **2** at index 4 → swap with index 1 → `[1, 2, 5, 3, 4]`
+1. Initialize `swapCount = 0`.
+2. Loop `i` from `0` to `n − 2`:
 
-- **Pass 3 (i = 2)**:
-  - `[5, 3, 4]` → smallest **3** at index 3 → swap with index 2 → `[1, 2, 3, 5, 4]`
+   - Find `minPos` among indices `i..n − 1`.
+   - If `minPos != i`, swap `arr[i]` and `arr[minPos]`, and **increment** `swapCount`.
 
-- **Pass 4 (i = 3)**:
-  - `[5, 4]` → smallest **4** at index 4 → swap with index 3 → `[1, 2, 3, 4, 5]`
+3. Return `swapCount` after sorting.
 
-- **Pass 5 (i = 4)**:
-  - `[5]` remains—sorted.
+```plaintext
+swapCount = 0
+for i in 0..n-2:
+  minPos = i
+  for j in i+1..n-1:
+    if arr[j] < arr[minPos]:
+      minPos = j
+  if minPos != i:
+    swap(arr[i], arr[minPos])
+    swapCount++
+return swapCount
+```
 
-**Final Result**: `[1, 2, 3, 4, 5]`
+**Example on `[5, 4, 1, 3, 2]`**:
+
+- Pass 1: swap with `1` ⇒ `swapCount = 1`.
+- Pass 2: swap with `2` ⇒ `swapCount = 2`.
+- Pass 3: swap with `3` ⇒ `swapCount = 3`.
+- Pass 4: swap with `4` ⇒ `swapCount = 4`.
+- Pass 5: no swap (only one left).
+
+At the end, `swapCount = 4`. That matches exactly how many times the array was rearranged.
+
+**Performance**:
+
+- Time: Still O(n²) (finding `minPos` is the bottleneck).
+- Space: O(1).
+- The difference is just that we check `minPos != i` and count only real swaps.
+
+**When I’d use this**:
+
+- To analyze how “shuffled” different inputs are.
+- When I want accurate swap metrics in unit tests or performance write‑ups.
 
 ---
 
-## When & Why to Use Selection Sort
+## 📊 Quick Reference
 
-- **Small datasets**: straightforward for small arrays.
-- **Write-limited scenarios**: minimal number of swaps.
-- **Educational purposes**: helps illustrate the selection concept before moving to more complex sorts.
+| Method                         | Time  | Space | Swap Behavior                             |
+| ------------------------------ | ----- | ----- | ----------------------------------------- |
+| Standard Selection Sort        | O(n²) | O(1)  | Exactly n−1 swaps (even if redundant)     |
+| Selection Sort w/ Swap Counter | O(n²) | O(1)  | Counts only real swaps when `minPos != i` |
 
 ---
 
-## Next Step: Selection Sort Variant – Descending Order
+## 🔑 Key Takeaways
 
-On the next iteration, I’ll implement a **descending-order Selection Sort**, flipping the comparison logic to repeatedly select the *largest* unsorted element and move it to the front. This will deepen my understanding of how minor tweaks in the inner comparison can reverse the sort direction while preserving in-place efficiency.
+- Selection Sort finds the smallest unsorted element each pass and moves it into place—simple to understand but O(n²).
+- Counting swaps helps reveal how sorted (or unsorted) the input was initially.
+- Both variations are in-place, making Selection Sort suitable for memory-constrained environments but not for very large datasets.
+
+**Next up**: On Day 22, I’ll compare Selection Sort to **Insertion Sort**, to see how one extra comparison strategy changes performance and behavior. 🚀
