@@ -289,3 +289,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Understanding swap behavior deepens insight into sorting mechanics and input array disorder.
 
 **Link(s) to work** [Day_22](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_22)
+
+### Day 23: June 01, 2025
+
+**Today's Progress**
+
+- Implemented **Insertion Sort** in three ways:
+  1. Basic insertion (increasing order).
+  2. Insertion Sort with swap (shift) counting.
+  3. Insertion Sort in decreasing order with swap count.
+
+**What I Learned**
+
+- How Insertion Sort builds a sorted segment by shifting elements.
+- Counting shifts reveals how “unsorted” the input is.
+- Flipping comparison for descending order changes shift behavior and final order.
+- All variants run in O(n²) time but adapt to nearly sorted data in O(n).
+
+**Link(s) to work** [Day_23](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_23)
