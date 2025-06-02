@@ -307,3 +307,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - All variants run in O(n²) time but adapt to nearly sorted data in O(n).
 
 **Link(s) to work** [Day_23](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_23)
+
+### Day 24: June 02, 2025
+
+**Today's Progress**
+
+- Refined **Insertion Sort** by adding swap counters in two ways:
+  1. Local `swap` variable returned from the method.
+  2. Static `swapCount` variable at class scope.
+- Ran both versions on sample arrays to compare shift behaviors.
+
+**What I Learned**
+
+- Local counters avoid leftover state and are safer for repeated calls.
+- Static counters simplify access but must be reset between runs.
+- Counting shifts reveals how “unsorted” an array is.
+- Insertion Sort remains O(n²) worst-case, O(n) best-case, and stable.
+
+**Link(s) to work** [Day_24](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_24)
