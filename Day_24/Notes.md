@@ -27,9 +27,11 @@ Below is **my overview** of both implementations, highlighting key logic, pseudo
 **Logic Overview**:
 
 - Use a local integer `swap` inside the `insertionSort` method to count each shift.
+
 - For each index `i` from 1 to n−1:
 
   1. Store `key = arr[i]` and set `prev = i − 1`.
+
   2. While `prev >= 0` and `arr[prev] > key`:
 
      - Shift `arr[prev]` to `arr[prev + 1]`, increment `swap`, and decrement `prev`.
@@ -99,4 +101,4 @@ function insertionSort(arr):
 - **Static counter** offers easy access but requires careful reset management.
 - Insertion Sort remains O(n²) worst-case, O(n) best-case, and stable; shift counting does not affect the algorithm’s complexity.
 
-Tomorrow: I’ll explore **Bubble Sort optimizations**, diving into early-exit checks and measuring impact on nearly sorted arrays. 🚀
+Tomorrow: I’ll learn **inbuilt sort concept** and write code for inbuilt sort. 🚀
