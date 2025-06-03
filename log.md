@@ -325,3 +325,23 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Insertion Sort remains O(n²) worst-case, O(n) best-case, and stable.
 
 **Link(s) to work** [Day_24](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_24)
+
+### Day 25: June 03, 2025
+
+**Today's Progress**
+
+- Explored Java’s inbuilt sorting methods:
+  - Used `Arrays.sort(int[])` for full-array ascending sort.
+  - Sorted subranges with `Arrays.sort(int[], fromIndex, toIndex)`.
+  - Applied `Arrays.sort(Integer[], Collections.reverseOrder())` to reverse an array.
+  - Leveraged `Collections.sort(List<E>)` and custom comparators on lists.
+
+**What I Learned**
+
+- `Arrays.sort(int[])` uses Dual-Pivot Quicksort (fast, in-place, average O(n log n)).
+- Sorting a subrange (`fromIndex` to `toIndex - 1`) lets me sort only part of an array.
+- Reverse-order sorting (`Collections.reverseOrder()`) requires object arrays (`Integer[]`) or lists.
+- `Collections.sort(List<E>)` uses TimSort (stable, O(n log n), ideal for partially sorted data).
+- Built-in methods handle edge cases and optimize performance—letting me focus on problem logic.
+
+**Link(s) to work** [Day_25](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_25)
