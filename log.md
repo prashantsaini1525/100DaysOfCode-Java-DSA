@@ -345,3 +345,23 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Built-in methods handle edge cases and optimize performance—letting me focus on problem logic.
 
 **Link(s) to work** [Day_25](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_25)
+
+### Day 26: June 04, 2025
+
+**Today's Progress**
+
+- Implemented **Counting Sort** in Java for integer arrays.
+- Learned how to:
+  - Find the maximum value to size the `count[]` array.
+  - Tally frequencies without direct comparisons.
+  - Rebuild the array in ascending order using the tally.
+- Ran a step-by-step example with `arr = [1, 4, 1, 3, 2, 4, 3, 7]` to verify correctness.
+
+**What I Learned**
+
+- Counting Sort runs in O(n + k) time (`n` = number of elements, `k` = max value + 1) and uses O(k) extra space.
+- It’s ideal for non-negative integers within a known, moderate range.
+- Negative values require shifting (e.g., add `|minVal|` to each element).
+- For very large `k` compared to `n`, Counting Sort becomes inefficient in space.
+
+**Link(s) to work** [Day_26](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_26)
