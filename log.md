@@ -365,3 +365,22 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - For very large `k` compared to `n`, Counting Sort becomes inefficient in space.
 
 **Link(s) to work** [Day_26](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_26)
+
+### Day 27: June 05, 2025
+
+**Today's Progress**
+
+- Solved the descending-order sort question using:
+  1. Bubble Sort (with swap counter).
+  2. Selection Sort (with swap counter).
+- Compared swap counts to measure “unsortedness” on the same input `[3, 6, 2, 1, 8, 7, 4, 5, 3, 1]`.
+- Prepared to tackle Insertion Sort and Counting Sort on the same problem tomorrow.
+
+**What I Learned**
+
+- Bubble Sort swaps adjacent out-of-order elements repeatedly; swap count can balloon on very unsorted data.
+- Selection Sort does exactly one swap per outer iteration (n−1 swaps total) if not optimized further.
+- Bubble Sort is stable, whereas Selection Sort is not stable by default.
+- Counting swaps reveals how much actual data movement each algorithm performs beyond big-O comparisons.
+
+**Link(s) to work** [Day_27](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_27)
