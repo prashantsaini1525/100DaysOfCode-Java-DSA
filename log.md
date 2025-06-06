@@ -384,3 +384,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Counting swaps reveals how much actual data movement each algorithm performs beyond big-O comparisons.
 
 **Link(s) to work** [Day_27](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_27)
+
+### Day 28: June 06, 2025
+
+**Today's Progress**
+
+- Solved descending-order sort using:
+  1. Insertion Sort (with shift counter).
+  2. Counting Sort (descending rebuild).
+- Compared shift counts in Insertion Sort and placements in Counting Sort on input `[3, 6, 2, 1, 8, 7, 4, 5, 3, 1]`.
+- Learned when Insertion Sort’s O(n²) shifts outpace Counting Sort’s O(n + k) placements.
+
+**What I Learned**
+
+- **Insertion Sort**: Shifts smaller elements right until `curr` finds its spot; shift count spikes when large values appear late.
+- **Counting Sort**: Rebuild from highest count index down for descending; runs in O(n + k), but uses O(k) space.
+- For moderate `k`, Counting Sort is much faster and involves fewer moves than Insertion Sort on the same data.
+
+**Link(s) to work** [Day_28](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_28)
