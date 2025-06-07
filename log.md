@@ -402,3 +402,19 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - For moderate `k`, Counting Sort is much faster and involves fewer moves than Insertion Sort on the same data.
 
 **Link(s) to work** [Day_28](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_28)
+
+### Day 29: June 07, 2025
+
+**Today's Progress**
+
+- Practiced Java programs for 2D array creation, input, and printing, including both hardcoded and Scanner-based methods.
+- Implemented nested loops to traverse and display matrix elements on the console.
+
+**What I Learned**
+
+- Each row in a 2D array functions as a separate 1D array.
+- Taking dynamic input with the `Scanner` class requires nested loops and careful index handling.
+- Properly closing the `Scanner` object to prevent resource leaks.
+
+**Link(s) to work**
+[Day_29](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_29)
