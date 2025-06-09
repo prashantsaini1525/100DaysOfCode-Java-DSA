@@ -416,5 +416,39 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Taking dynamic input with the `Scanner` class requires nested loops and careful index handling.
 - Properly closing the `Scanner` object to prevent resource leaks.
 
-**Link(s) to work**
-[Day_29](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_29)
+**Link(s) to work** [Day_29](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_29)
+
+### Day 30: June 08, 2025
+
+**Today's Progress**
+
+- Enhanced 2D array handling by:
+  1. Prompting users for each element in a 3×3 matrix.
+  2. Implementing a `search` method to find and report a target value in the matrix.
+- Practiced nested loops, user-friendly prompts, and basic 2D search logic.
+
+**What I Learned**
+
+- Prompted inputs guide users and improve clarity in CLI programs.
+- A simple matrix search uses nested loops and runs in O(n·m).
+- Always close `Scanner` to prevent resource leaks.
+- Returning early from search saves unnecessary iterations.
+
+**Link(s) to work** [Day_30](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_30)
+
+### Day 31: June 09, 2025
+
+**Today's Progress**
+
+- Extended 2D array practice by:
+  1. Prompting for a 3×3 matrix input.
+  2. Scanning the matrix in a single pass to find the largest and smallest elements.
+- Reinforced nested loops, comparison logic, and proper variable initialization.
+
+**What I Learned**
+
+- Initialize `max` and `min` from the first element to handle all possible values correctly.
+- Use nested loops to traverse each cell and update extremes in O(n·m) time.
+- Always close `Scanner` after input to avoid resource leaks.
+
+**Link(s) to work** [Day_31](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_31)
