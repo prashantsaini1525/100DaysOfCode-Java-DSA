@@ -452,3 +452,19 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Always close `Scanner` after input to avoid resource leaks.
 
 **Link(s) to work** [Day_31](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_31)
+
+### Day 32: June 11, 2025
+
+**Today's Progress**
+
+- Deepened understanding of 2D arrays in memory:
+  - Reviewed row-major contiguity and address calculation (`base + i * cols + j`).
+- Implemented **spiral order traversal** of a matrix using four boundary pointers (`startRow`, `endRow`, `startCol`, `endCol`).
+
+**What I Learned**
+
+- Memory layout: a 2D grid is stored in one continuous block, improving cache efficiency.
+- Spiral traversal uses O(1) extra space and O(n·m) time by “peeling layers” with nested loops.
+- Careful boundary checks (`startRow == endRow`, `startCol == endCol`) prevent duplicate prints.
+
+**Link(s) to work** [Day_32](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_32)
