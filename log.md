@@ -468,3 +468,20 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Careful boundary checks (`startRow == endRow`, `startCol == endCol`) prevent duplicate prints.
 
 **Link(s) to work** [Day_32](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_32)
+
+### Day 33: June 12, 2025
+
+**Today's Progress**
+
+- Solved the **Diagonal Sum** problem on a square matrix using:
+  1. **Brute-force** nested loops (O(nÂ²)) to check every cell.
+  2. **Optimized** single-pass (O(n)) using direct index access and avoiding double-count of the center.
+
+**What I Learned**
+
+- Brute force is straightforward but visits non-diagonal elements unnecessarily.
+- The optimized approach reads `matrix[i][i]` and `matrix[i][n-1-i]` in one loop, checking `i != n-1-i` to skip the center.
+- Both methods use O(1) extra space; optimized is O(n) time.
+- Visualizing odd vs. even dimensions clarifies why the center element needs special handling.
+
+**Link(s) to work** [Day_33](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_33)
