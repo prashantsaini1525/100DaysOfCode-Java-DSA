@@ -485,3 +485,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Visualizing odd vs. even dimensions clarifies why the center element needs special handling.
 
 **Link(s) to work** [Day_33](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_33)
+
+### Day 34: June 13, 2025
+
+**Today's Progress**
+
+- Implemented **staircase search** from the top-right corner on a sorted 2D matrix.
+- Tested two scenarios:
+  1. Key found (50) → printed its location.
+  2. Key missing (429) → reported not found.
+- Reinforced O(n + m) time and O(1) space, moving left/down.
+
+**What I Learned**
+
+- Starting at top-right lets you eliminate a row or column each comparison.
+- Found-case and not-found-case share identical logic—only outcomes differ.
+- Staircase search beats O(n·m) brute force and O(n log m) row-wise binary search.
+
+**Link(s) to work** [Day_34](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_34)
