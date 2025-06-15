@@ -503,3 +503,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Staircase search beats O(n·m) brute force and O(n log m) row-wise binary search.
 
 **Link(s) to work** [Day_34](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_34)
+
+### Day 35: June 15, 2025
+
+**Today's Progress**
+
+- Switched to **bottom-left start** for staircase search on the same sorted matrix.
+- Verified two implementations (different print messages) both finding key 50.
+- Used up/right movements to maintain O(n + m) time and O(1) space.
+
+**What I Learned**
+
+- Alternate corners work by flipping movement directions:
+  - Bottom-left → up/right
+  - Top-right → left/down
+- Corner choice doesn’t change complexity—only the pointer logic.
+- Good drill for understanding matrix traversal symmetry.
+
+**Link(s) to work** [Day_35](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_35)
