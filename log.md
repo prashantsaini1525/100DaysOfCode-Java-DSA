@@ -521,3 +521,21 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Good drill for understanding matrix traversal symmetry.
 
 **Link(s) to work** [Day_35](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_35)
+
+### Day 36: June 19, 2025
+
+**Today's Progress**
+
+- Built three 2D array utilities in Java:
+  1. `countValue(matrix, value)` to tally occurrences.
+  2. `sumRow(matrix, rowIndex)` to sum a specific row.
+  3. `transpose(matrix)` to swap rows and columns.
+- Refactored logic into reusable methods and cleaned up `main`.
+
+**What I Learned**
+
+- Extracting methods makes code DRY, readable, and testable.
+- Meaningful names instantly show each methodâ€™s purpose.
+- Modular design simplifies adding new utilities later.
+
+**Link(s) to work** [Day_36](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_36)
