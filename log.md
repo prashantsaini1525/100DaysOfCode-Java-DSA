@@ -539,3 +539,19 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Modular design simplifies adding new utilities later.
 
 **Link(s) to work** [Day_36](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_36)
+
+### Day 37: June 20, 2025
+
+**Today's Progress**
+
+- Explored **What is a String**: `char[]` vs `String`, string pool, literals vs constructor.
+- Practiced **String I/O** using `Scanner.next()` for single tokens and `nextLine()` for full lines.
+- Handled the common pitfall of leftover newline consumption when mixing `next()` and `nextLine()`.
+
+**What I Learned**
+
+- A `String` is a sequence of characters backed by a `char[]` and stored in the string pool when created as a literal.
+- Use `Scanner.next()` to read one word; use `Scanner.nextLine()` to read entire lines including spaces.
+- After `nextInt()` or `next()`, call an extra `nextLine()` to clear the line before reading with `nextLine()`.
+
+**Link(s) to work** [Day_37](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_37)
