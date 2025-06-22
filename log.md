@@ -555,3 +555,23 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - After `nextInt()` or `next()`, call an extra `nextLine()` to clear the line before reading with `nextLine()`.
 
 **Link(s) to work** [Day_37](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_37)
+
+### Day 38: June 21, 2025
+
+**Today's Progress**
+
+- Measured string sizes using `length()`:
+  - Retrieved length in O(1), counting spaces and punctuation.
+  - Handled pitfalls: off-by-one in loops and null checks.
+- Explored string concatenation techniques:
+  1. `+` operator for simple, readable joins.
+  2. `concat()` method for chaining.
+- Reviewed when to switch to `StringBuilder` for heavy concatenation.
+
+**What I Learned**
+
+- `s.length()` is constant-time; remember spaces and UTF‑16 surrogates count as `char` units.
+- Simple concatenation with `+` or `concat()` works, but loops benefit from `StringBuilder` to avoid extra allocations.
+- Balance clarity and performance—use readable methods first, optimize only when needed.
+
+**Link(s) to work** [Day_38](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_38)
