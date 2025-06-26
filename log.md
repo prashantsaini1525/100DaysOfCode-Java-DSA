@@ -575,3 +575,19 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Balance clarity and performanceâ€”use readable methods first, optimize only when needed.
 
 **Link(s) to work** [Day_38](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_38)
+
+### Day 39: June 26, 2025
+
+**Today's Progress**
+
+- Learned to use `charAt(index)` for direct character access and iterated through strings.
+- Implemented a palindrome checker using the two-pointer approach.
+- Handled edge cases: index bounds and even/odd lengths.
+
+**What I Learned**
+
+- `str.charAt(i)` fetches the character at position `i`, but throws if out of range.
+- Iteration pattern: `for (int i = 0; i < str.length(); i++)`.
+- Two-pointer palindrome check runs in O(n) time with O(1) space.
+
+**Link(s) to work** [Day_39](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_39)
