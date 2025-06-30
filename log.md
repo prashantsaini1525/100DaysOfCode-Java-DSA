@@ -591,3 +591,19 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Two-pointer palindrome check runs in O(n) time with O(1) space.
 
 **Link(s) to work** [Day_39](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_39)
+
+### Day 40: June 30, 2025
+
+**Today's Progress**
+
+- Parsed a directions string (`N`, `S`, `E`, `W`) to track grid movement.
+- Calculated Euclidean distance from `(0,0)` to final `(x,y)` in O(n)/O(1).
+- Learned the difference between `==` (reference) and `equals()` (content) for Strings.
+
+**What I Learned**
+
+- Converting the path to `x,y` offsets allows a simple distance formula: `√(x² + y²)`.
+- `==` checks if two String references point to the same object.
+- `equals()` checks if two Strings have identical content; always use for text comparison.
+
+**Link(s) to work** [Day_40](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_40)
