@@ -607,3 +607,19 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - `equals()` checks if two Strings have identical content; always use for text comparison.
 
 **Link(s) to work** [Day_40](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_40)
+
+### Day 41: July 2, 2025
+
+**Today's Progress**
+
+- Used `StringBuilder` to build and modify text in‑place without costly copies.
+- Applied `compareTo()` to sort strings lexicographically and find the “largest” element.
+- Demonstrated both with practical examples (alphabet builder & fruit array).
+
+**What I Learned**
+
+- `StringBuilder` avoids O(n²) concatenation by using a mutable buffer.
+- `compareTo()` returns negative/zero/positive to indicate lexicographic order.
+- Tips: use `compareToIgnoreCase()` for case‑insensitive checks and always null‑check.
+
+**Link(s) to work** [Day_41](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_41)
