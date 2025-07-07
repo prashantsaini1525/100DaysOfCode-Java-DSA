@@ -623,3 +623,19 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Tips: use `compareToIgnoreCase()` for case‑insensitive checks and always null‑check.
 
 **Link(s) to work** [Day_41](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_41)
+
+### Day 42: July 7, 2025
+
+**Today's Progress**
+
+- Explored why Java Strings are immutable and how this design improves memory, security, and performance.
+- Practiced writing `StringBuilder` logic for building the alphabet and converting sentences to capitalized format.
+- Created a custom method to capitalize the first letter after every space.
+
+**What I Learned**
+
+- Java Strings can’t be changed once created—this allows memory pooling, thread safety, and safe hash-based lookups.
+- All string modifications return new objects; methods like `concat()` and `replace()` don’t affect the original string.
+- `StringBuilder` allows O(n) efficient construction and transformation of character sequences without repeated allocations.
+
+**Link(s) to work** [Day_42](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_42)
