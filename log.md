@@ -639,3 +639,19 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - `StringBuilder` allows O(n) efficient construction and transformation of character sequences without repeated allocations.
 
 **Link(s) to work** [Day_42](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_42)
+
+### Day 43: July 9, 2025
+
+**Today's Progress**
+
+- Implemented a string compression algorithm that replaces repeating characters with a single character followed by the count.
+- Improved the approach using `StringBuilder` to optimize memory usage and performance.
+- Compared outputs on sample cases like `"aaabbcccdd"` and `"abcd"`.
+
+**What I Learned**
+
+- Naive concatenation (`newStr += ...`) leads to O(n²) time in some cases—`StringBuilder` is the better choice for efficient string construction.
+- This pattern (character grouping with a count) is common in compression logic and interview problems.
+- The solution uses O(n) time and space, scanning once and storing only the compressed form.
+
+**Link(s) to work** [Day_43](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_43)
