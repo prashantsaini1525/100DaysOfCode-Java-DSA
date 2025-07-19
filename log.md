@@ -655,3 +655,21 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - The solution uses O(n) time and space, scanning once and storing only the compressed form.
 
 **Link(s) to work** [Day_43](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_43)
+
+
+### Day 44: July 11, 2025
+
+**Today's Progress**
+
+- Solved 5 Java string questions: from counting vowels and checking equality to string replacements, anagram validation, and compression.
+- Practiced comparing string content with `equals()`, manipulating with `replace()`, and sorting to verify anagrams.
+- Revisited my Day 43 string compression code.
+
+**What I Learned**
+
+- `equals()` compares content, not memory.
+- `replace()` affects all matching characters.
+- Sorting strings for anagram checks is clean and effective.
+- Small string tasks build strong DSA problem-solving habits.
+
+**Link(s) to work** [Day_44](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_44)
