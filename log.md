@@ -673,3 +673,21 @@ Pick the simplest approach that meets your performance needs, and use the arrayâ
 - Small string tasks build strong DSA problem-solving habits.
 
 **Link(s) to work** [Day_44](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_44)
+
+### Day 45: July 10, 2025
+
+**Today's Progress**
+
+- Learned the fundamentals of bit manipulation and why it matters for performance and memory.
+- Converted between binary and decimal, both by hand and with Java methods.
+- Explored all bitwise operators (`&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`) and common masking patterns.
+- Dug into the bitwise AND operator: theory, examples, and practical tips.
+
+**What I Learned**
+
+- Bitwise ops run in constant time and let you pack flags into a single integer.
+- Shifting and masking are your toolbox for extracting, setting, or toggling bits.
+- Converting between binary and decimal under the hood uses shifts and bitâ€‘adds.
+- The AND operator is essential for checking and clearing specific bits.
+
+**Link(s) to work** [Day_45](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_45)
