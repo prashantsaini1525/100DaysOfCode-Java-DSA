@@ -114,7 +114,3 @@ _Happy coding with string lengths!_
 - Combine with `trim()` to ignore leading/trailing spaces: `str.trim().length()`.
 - For arrays, use `array.length` (no parentheses).
 - For collections, use `collection.size()`.
-
----
-
-_Prepared for the Java Alpha Course_

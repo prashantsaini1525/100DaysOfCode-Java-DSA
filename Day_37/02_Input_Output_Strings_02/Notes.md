@@ -50,7 +50,3 @@ Getting user input and showing output is at the heart of interactive programs. W
   ```java
   System.out.print(">> ");
   ```
-
----
-
-_Prepared for the Java Alpha Course_

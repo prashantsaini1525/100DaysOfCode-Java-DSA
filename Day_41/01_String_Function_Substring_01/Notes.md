@@ -70,7 +70,3 @@ System.out.println(result); // prints: abcdefghijklmnopqrstuvwxyz
 - Use `StringBuilder` to speed up many small text changes.
 - Save memory by reusing the same buffer.
 - Choose the right tool for your threading needs.
-
----
-
-_Prepared for the Java Alpha Course_

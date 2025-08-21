@@ -67,7 +67,3 @@ Here, `original` remains unchanged. Calling `toUpperCase()` gives you a new Stri
 ## 7. Conclusion
 
 Java’s decision to make `String` immutable is a thoughtful one. It simplifies coding, boosts performance, and tightens security—an all-around win for developers and applications alike.
-
----
-
-_Prepared for the Java Alpha Course_

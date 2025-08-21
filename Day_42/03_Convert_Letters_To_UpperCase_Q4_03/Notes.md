@@ -98,7 +98,3 @@ public static String toUpperCase(String str) {
 - To be extra safe, you could first **lowercase** the whole string, so existing uppercase letters inside words don’t sneak through.
 - If you want to treat other separators (like `-` or `_`) as word boundaries, just add them to the `if` check.
 - This humanised logic helps students see exactly how each step transforms the text, making the concept stick!
-
----
-
-_Prepared for the Java Alpha Course_

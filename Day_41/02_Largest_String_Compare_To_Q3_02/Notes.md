@@ -50,7 +50,3 @@ System.out.println("Largest fruit: " + largest); // prints: Elderberry
 - Comparison is **case-sensitive**: "apple" > "Banana" (lowercase letters have higher Unicode values).
 - For case-insensitive comparisons, use `compareToIgnoreCase()`.
 - Always check for `null` to avoid `NullPointerException` when calling `compareTo()`.
-
----
-
-_Prepared for the Java Alpha Course_
