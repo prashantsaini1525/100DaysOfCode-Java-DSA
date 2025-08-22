@@ -691,3 +691,20 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - The AND operator is essential for checking and clearing specific bits.
 
 **Link(s) to work** [Day_45](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_45)
+
+### Day 46: July 12, 2025
+
+**Today's Progress**
+
+- Continued with bit manipulation and explored three new operators in Java: NOT (`~`), OR (`|`), and XOR (`^`).
+- Practiced flipping bits with NOT, setting/merging flags with OR, and toggling bits with XOR.
+- Ran code examples like `~5 → -6`, `5 | 6 → 7`, and `5 ^ 3 → 2` to understand the mechanics.
+
+**What I Learned**
+
+- `~x = -(x+1)` in Java, because of two’s complement representation.  
+- OR (`|`) is great for combining masks and ensuring specific bits are set.  
+- XOR (`^`) shines in toggling bits and parity checks.  
+- Understanding these operators makes low-level optimizations and algorithms much clearer.
+
+**Link(s) to work** [Day_46](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_46)
