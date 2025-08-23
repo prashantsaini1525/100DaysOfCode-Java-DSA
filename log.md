@@ -692,7 +692,7 @@ Pick the simplest approach that meets your performance needs, and use the array�
 
 **Link(s) to work** [Day_45](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_45)
 
-### Day 46: July 12, 2025
+### Day 46: August 23, 2025
 
 **Today's Progress**
 
@@ -708,3 +708,22 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Understanding these operators makes low-level optimizations and algorithms much clearer.
 
 **Link(s) to work** [Day_46](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_46)
+
+### Day 47: August 23, 2025
+
+**Today's Progress**
+
+- Learned the bitwise left shift (`<<`) and right shift (`>>`) operators with hands-on examples.
+  - Verified `5 << 2 = 20`, `6 << 3 = 48`, and `5 << 3 = 40`.
+  - Verified `6 >> 1 = 3`, `6 >> 3 = 0`, and `5 >> 3 = 0`.
+- Solved an odd/even parity problem using a bitmask (`n & 1`) and tested on sample inputs (3, 11, 14, 99).
+- Ran example programs and visualized binary transformations to internalize how bits move.
+
+**What I Learned**
+
+- `a << b` ≡ `a * 2^b`: left shifts multiply by powers of two; bits shifted out at the left are discarded and zeros fill from the right.
+- `a >> b` ≡ integer division by `2^b`: right shifts divide by powers of two; Java's `>>` preserves the sign (sign extension) for negatives.
+- Parity check with `n & 1` is O(1) and perfect for fast odd/even detection: result `0` → even, `1` → odd.
+- Bit shifts compile to very cheap CPU instructions — useful for micro-optimizations, but prefer readability when performance isn't critical.
+
+**Link(s) to work** [Day_47](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_47)
