@@ -727,3 +727,23 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Bit shifts compile to very cheap CPU instructions — useful for micro-optimizations, but prefer readability when performance isn't critical.
 
 **Link(s) to work** [Day_47](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_47)
+
+### Day 48: August 23, 2025
+
+**Today's Progress**
+
+- Explored three fundamental bit operations in Java: **Get, Set, and Clear i-th Bit**.
+  - Verified `getIthBit(10, 2) = 0` and `getIthBit(10, 3) = 1`.
+  - Verified `setIthBit(10, 2) = 14`, `setIthBit(10, 3) = 10`, and `setIthBit(5, 2) = 5`.
+  - Verified `clearIthBit(10, 1) = 8`, `clearIthBit(10, 2) = 10`, and `clearIthBit(10, 3) = 2`.
+- Wrote separate Java programs for each operation and tested them with binary breakdowns.
+- Practiced visualizing how masks (`1 << i` and `~(1 << i)`) work in combination with AND/OR.
+
+**What I Learned**
+
+- **Get i-th Bit** → `(n & (1 << i)) != 0` checks if bit is set; `(n & (1 << i)) >> i` extracts 0 or 1.
+- **Set i-th Bit** → `n | (1 << i)` ensures the i-th bit becomes 1 while leaving others unchanged.
+- **Clear i-th Bit** → `n & ~(1 << i)` forces the i-th bit to 0 while keeping other bits intact.
+- These bitmask tricks are the foundation of efficient **flag checking**, **binary encoding**, and **low-level optimizations**.
+
+**Link(s) to work** [Day_48](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_48)
