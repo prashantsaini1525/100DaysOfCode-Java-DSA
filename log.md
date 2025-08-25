@@ -692,7 +692,7 @@ Pick the simplest approach that meets your performance needs, and use the array�
 
 **Link(s) to work** [Day_45](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_45)
 
-### Day 46: August 23, 2025
+### Day 46: August 22, 2025
 
 **Today's Progress**
 
@@ -728,7 +728,7 @@ Pick the simplest approach that meets your performance needs, and use the array�
 
 **Link(s) to work** [Day_47](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_47)
 
-### Day 48: August 23, 2025
+### Day 48: August 24, 2025
 
 **Today's Progress**
 
@@ -747,3 +747,23 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - These bitmask tricks are the foundation of efficient **flag checking**, **binary encoding**, and **low-level optimizations**.
 
 **Link(s) to work** [Day_48](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_48)
+
+### Day 49: August 25, 2025
+
+**Today's Progress**
+
+- Implemented and tested three bit-manipulation patterns: **Update i-th bit**, **Clear last i bits**, and **Clear range [i, j]**.
+  - Verified updating examples on `n = 10`: updating i=2 → `14`, updating i=3 → `2`.
+  - Cleared last i bits for `num = 15`: i=1 → `14`, i=2 → `12`, i=3 → `8`.
+  - Cleared range `[i,j]` with `n = 31`, `i=1`, `j=3` → result `17`.
+- Wrote small Java functions for each operation (`updateIthBit`, `clearLastIBitsSafe`, `clearRangeBits`) and validated with binary walkthroughs.
+- Added safety checks for shift bounds (handle `i <= 0`, `i >= 32`, and valid `i <= j` ranges).
+
+**What I Learned**
+
+- **Update i-th bit**: clear first then place the new bit — `n & ~(1<<i)` then `| (newBit<<i)` (or use helper set/clear).
+- **Clear last i bits**: `n & (~((1<<i)-1))` — useful for alignment and rounding down to multiples of `2^i`.
+- **Clear range [i,j]**: build mask with `((~0) << (j+1)) | ((1<<i)-1)` and `AND` with `n` to zero the range.
+- Always guard shift amounts in Java to avoid undefined/unsafe shifts; these operations run in O(1) time and use constant extra space.
+
+**Link(s) to work** [Day_49](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_49)
