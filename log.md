@@ -767,3 +767,25 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Always guard shift amounts in Java to avoid undefined/unsafe shifts; these operations run in O(1) time and use constant extra space.
 
 **Link(s) to work** [Day_49](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_49)
+
+### Day 50: August 26, 2025
+
+**Today's Progress**
+
+- Implemented the fast power-of-two check using `n > 0 && (n & (n - 1)) == 0`.
+  - Validated on examples: `16 → true`, `18 → false`.
+- Implemented several ways to count set bits:
+  - Simple right-shift loop (`(n & 1)` + `n >>= 1`).
+  - Compact add-last-bit variant (`count += (n & 1); n >>= 1`).
+  - Brian Kernighan’s method (`while(n>0){ n &= (n-1); count++; }`) for efficiency when set bits are few.
+  - Verified results on `10 → 2`, `15 → 4`, `13 → 3`.
+- Wrote and tested helper functions, compared builtin `Integer.bitCount()` for readability/performance.
+
+**What I Learned**
+
+- `n & (n - 1)` clears the lowest set bit — paired with `n > 0` this is a constant-time, reliable power-of-two test.
+- Simple shift-and-count is clear and effective (O(#bits)), while Brian Kernighan’s trick is O(k) where k = number of set bits.
+- Use `Integer.bitCount()` in Java when you want a concise, fast builtin.
+- Edge cases: always guard against non-positive inputs and use `long`/`BigInteger` for larger ranges.
+
+**Link(s) to work** [Day_50](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_50)
