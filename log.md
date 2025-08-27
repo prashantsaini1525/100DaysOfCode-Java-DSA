@@ -789,3 +789,21 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Edge cases: always guard against non-positive inputs and use `long`/`BigInteger` for larger ranges.
 
 **Link(s) to work** [Day_50](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_50)
+
+### Day 51: August 27, 2025
+
+**Today's Progress**
+
+- Studied fast exponentiation (binary exponentiation) and implemented both iterative and modular variants.
+  - Verified `fastPow(5,3) → 125`, `fastPow(3,5) → 243`, `fastPow(2,10) → 1024`.
+  - Verified modular result `modPow(5,3,100) → 25`.
+- Wrote Java helper functions `fastPow` and `modPow`, and checked modular normalization (`(a%mod+mod)%mod`) for negative bases.
+- Noted edge cases: `b = 0` returns `1`; negative exponents require fractional handling; use `BigInteger` or modular reduction to avoid overflow.
+
+**What I Learned**
+
+- Binary exponentiation reduces time from O(b) to O(log b) by squaring the base and using exponent bits.
+- Modular reduction inside the loop prevents overflow and is essential for problems that ask for results `% mod`.
+- Iterative approach avoids recursion-depth issues and is preferred for competitive programming.
+
+**Link(s) to work** [Day_51](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_51)
