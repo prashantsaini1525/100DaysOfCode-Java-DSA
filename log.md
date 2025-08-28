@@ -807,3 +807,25 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Iterative approach avoids recursion-depth issues and is preferred for competitive programming.
 
 **Link(s) to work** [Day_51](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_51)
+
+### Day 52: August 28, 2025
+
+**Today's Progress**
+
+- Completed the Apna College 5-question bit manipulation assessment.
+  - Q1: Checked if a number is a power of two → used `(n > 0 && (n & (n-1)) == 0)`.
+  - Q2: Counted set bits → loop with `(n & 1)` and shift.
+  - Q3: Found the single unique element → XOR of all numbers.
+  - Q4: Generated all subsets → used bitmask enumeration (`1<<n`).
+  - Q5: Implemented fast exponentiation (`a^b`) with binary exponentiation.
+- Added both the official questions and Apna College solutions into the Day 52 notes file.
+- My own solutions are kept in the repo only (not included in the notes.md file).
+
+**What I Learned**
+
+- Common interview patterns (power-of-two check, count set bits, XOR trick for single number).
+- Bitmasking is powerful for subset generation.
+- Fast exponentiation is a key application of bitwise exponent decomposition.
+- Writing clean reference solutions alongside my own helps double-check correctness.
+
+**Link(s) to work** [Day_52](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_52)
