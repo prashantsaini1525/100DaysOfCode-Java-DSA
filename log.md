@@ -829,3 +829,31 @@ Pick the simplest approach that meets your performance needs, and use the array�
 - Writing clean reference solutions alongside my own helps double-check correctness.
 
 **Link(s) to work** [Day_52](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_52)
+
+### Day 53: August 29, 2025
+
+**Today's Progress**
+
+- Learned the concept of **Classes & Objects** in Java.
+  - Implemented a `Pen` class with attributes (`color`, `tip`) and methods (`write()`, `printColor()`).
+  - Created multiple objects to observe how each object maintains its own state.
+- Practiced creating a `Student` class with attributes (`name`, `age`) and demonstrated how to initialize objects.
+- Explored **Access Modifiers** in detail:
+  - **public** → accessible from anywhere.
+  - **private** → accessible only within the same class (used in `BankAccount` for password).
+  - **protected** → accessible within the same package and subclasses (useful for inheritance).
+  - **default** (no modifier) → accessible only within the same package.
+- Built examples with getters/setters and inheritance to test each modifier.
+
+**What I Learned**
+
+- A **class** is a blueprint, and an **object** is an instance of that blueprint.
+- Objects hold their **own copy of fields**, so changes in one object don’t affect others.
+- **Access Modifiers** control visibility and encapsulation:
+  - Use `private` for sensitive data + public getter/setter for controlled access.
+  - Use `protected` when designing for subclass access.
+  - Use `default` for package-level encapsulation.
+  - Use `public` when a method/field must be available everywhere.
+- Encapsulation + correct use of modifiers = **clean, secure OOP design**.
+
+**Link(s) to work** [Day_53](https://github.com/prashantsaini1525/100DaysOfCode-Java-DSA/tree/main/Day_53)
